@@ -46,6 +46,8 @@ Article.create(title: "Binaural temporal fine structure sensitivity, cognitave f
 Article.create(title: "Longitudal Functional Performance among children with cocular implants and disabilites: a prospective sutdy using the Pediatric Evaluation of Disability and Inventory", author: "Wiley", evidence_level: 3, study_design: "Prospective Study", sub_section: "EF")
 Article.create(title: "Working Memory and Novel Word Learning in children with hearing impairment and children with specific language impairment", author: "Hansson", evidence_level: 2, study_design: "Cross-sectional", sub_section: "EF")
 
-Article.create(title: "", author: "", evidence_level: , study_design: "", sub_section: "EF")
-Article.create(title: "", author: "", evidence_level: , study_design: "", sub_section: "EF")
-Article.create(title: "", author: "", evidence_level: , study_design: "", sub_section: "EF")
+Article.create(title: "comparison of outcomes in children with hearing aids and cocular implants", author: "Fitzpatrick", evidence_level: 2, study_design: "retro-spective cohort", sub_section: "EF")
+Article.create(title: "reading comprehension of deaf children with cocular implants", author: "Vermeulen", evidence_level: 2, study_design: "Cross-sectional", sub_section: "EF")
+Article.create(title: "Auditory Sequential Organization among children with and without a hearing loss", author: "Jutras", evidence_level: 2, study_design: "Cross-sectional", sub_section: "EF")
+Article.create(title: "Working memory in children with cocular implants: Problems are in storage, not processing", author: "Nittrouer", evidence_level: 2, study_design: "Cross-sectional", sub_section: "EF")
+Article.create(title: "Pilot Study of cognition in children with unilateral hearing loss", author: "Ead", evidence_level: 2, study_design: "Cross-sectional", sub_section: "EF")

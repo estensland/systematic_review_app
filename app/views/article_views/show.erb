@@ -1,0 +1,24 @@
+
+<div class="view_pane">
+  <h3>Author: <%= @article.author %> </h3>
+  
+  <p><b>Title:</b> <%= @article.title %></p>
+  <p><b>Evidence Level:</b> <%= @article.evidence_level %></p>
+  <p><b>Study Design:</b> <%= @article.study_design %></p>
+  <p><b>Sub-Section:</b> <%= @article.sub_section %></p>
+  
+  <div class="left">
+    <p>Notes:</p>
+    <% @article.notes.each do |note| %>
+      <p class="note"><%= %></p>
+    <% end %>
+  </div>
+  
+  <div class="right">
+    <form action="/note/add" method="post">
+      <label for="text">Add a note
+        <textarea name="text" id="text" cols="40" rows="10"></textarea>  
+      </label>
+    </form>
+  </div>
+</div>

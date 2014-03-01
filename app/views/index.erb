@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Welcome to the Postinator</h1>
+  <p>Let's Do This!</p>
+  <h2>Posts:</h2>
+  <h4><%= @posts %></h4>
+  <form action="/add_post" method="post">
+    <h3>Add a Post</h3>
+    <p>Post Title:</p>
+    <input type="text" name ="post_title">
+    <p>Post Text:</p>
+    <input type="text" name ="post_text">
+    <input type="submit">
+  </form>
+  <form action="/edit_post" method="post">
+    <h3>Edit a Post</h3>
+    <p>Current Title:</p>
+    <input type="text" name ="current_title">
+    <p>New Title:</p>
+    <input type="text" name ="new_title">
+    <p>New Text:</p>
+    <input type="text" name ="new_text">
+    <input type="submit">
+  </form>
+  <form action="/edit_post" method="post">
+    <h3>Delete a Post</h3>
+    <p>Current Title:</p>
+    <input type="text" name ="current_title">
+    <input type="submit">
+  </form>
+</div>

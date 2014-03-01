@@ -1,0 +1,89 @@
+* {
+  padding:0;
+  margin: 0;
+}
+
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  background-color: cornsilk;
+  width: 90%;
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+td {
+  padding: 4px;
+}
+
+.title {
+  width: 40%;
+}
+
+.author {
+  text-align: center;
+  width: 10%;
+}
+
+.link {
+  width: 1%;
+}
+
+.link a{
+  text-decoration: none;
+}
+
+.evidence_level {
+  text-align: center;
+  width: 6%;
+}
+
+.study_design {
+  text-align: center;
+  width: 20%;
+}
+
+.sub_section {
+  text-align: center;
+  width: 8%;
+}
+
+.author, .study_design {
+
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.head {
+  text-align: center;
+  color: white;
+  background-color:black;
+}
+
+.right {
+  width 45%;
+  float: right;
+}
+
+.left {
+  width 45%;
+  float: left;
+}
+
+.view_pane {
+  margin: 2px;
+  width: 70%;
+}

@@ -1,0 +1,23 @@
+<table>
+  <th>
+    <tr>
+      <td class="head link"></td>
+      <td class="head title"> Title </td>
+      <td class="head author"> Author </td>
+      <td class="head evidence_level"> E-Level </td>
+      <td class="head study_design"> Study Design </td>
+      <td class="head sub_section"> Sub Section </td>
+    </tr>
+  </th>
+  
+  <% @articles.each do |article| %>
+    <tr>
+      <td class="link"><a href="/article/show/<%=article.id%>">-</a></td>
+      <td class="title"><%= article.short_title %> </td>
+      <td class="author"><%= article.author %> </td>
+      <td class="evidence_level"><%= article.evidence_level %> </td>
+      <td class="study_design"><%= article.study_design %> </td>
+      <td class="sub_section"><%= article.sub_section %> </td>
+    </tr>
+  <% end %>
+</table>

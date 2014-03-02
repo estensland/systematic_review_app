@@ -1,5 +1,5 @@
 require 'rake'
-require 'rspec/core/rake_task'
+# require 'rspec/core/rake_task'
 
 
 require ::File.expand_path('../config/environment', __FILE__)
@@ -366,6 +366,7 @@ task "launch" do
     exec(commands)
   end
 end
+
 
 
 desc 'Start IRB with application environment loaded'

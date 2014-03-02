@@ -1,4 +1,4 @@
-<table>
+<table class="luck_o_irish">
   <th>
     <tr>
       <td class="head link"></td>
@@ -9,15 +9,20 @@
       <td class="head sub_section"> Sub Section </td>
     </tr>
   </th>
-  
+  <% count = 1 %>
   <% @articles.each do |article| %>
-    <tr>
-      <td class="link"><a href="/article/show/<%=article.id%>">-</a></td>
-      <td class="title"><%= article.short_title %> </td>
-      <td class="author"><%= article.author %> </td>
-      <td class="evidence_level"><%= article.evidence_level %> </td>
-      <td class="study_design"><%= article.study_design %> </td>
-      <td class="sub_section"><%= article.sub_section %> </td>
-    </tr>
+    <% if count.odd? %> 
+      <tr class="odd">
+    <% else %>
+      <tr>
+    <% end %>
+        <td class="link"><a href="/article/show/<%=article.id%>">-</a></td>
+        <td class="title"><%= article.short_title %> </td>
+        <td class="author"><%= article.author %> </td>
+        <td class="evidence_level"><%= article.evidence_level %> </td>
+        <td class="study_design"><%= article.study_design %> </td>
+        <td class="sub_section"><%= article.sub_section %> </td>
+      </tr>
+    <% count += 1 %>
   <% end %>
 </table>

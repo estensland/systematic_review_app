@@ -1,5 +1,7 @@
 source :rubygems
 # PostgreSQL driver
+ruby '2.0.0'
+
 gem 'pg'
 
 # Sinatra driver

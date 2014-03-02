@@ -1,31 +1,10 @@
 
-get '/note/new/:id' do
-  
-  erb :"note_views/new"
-end
-
-get '/note/show/:id' do
-  
-  erb :"note_views/show"
-end
-
-get '/note/edit/:id' do
-  
-  erb :"note_views/edit"
-end 
-
-get '/note/delete/:id' do
-  
-  erb :"note_views/delete"
-end
-
-post '/note/new' do
-  new_object = Note.new(params[note])
+post '/note/add/:article_id' do
+  new_object = Note.new(article_id: params[:article_id], text: params[:text])
   if new_object.save
-    redirect to("/note_views/all")
+    redirect to("/article/show/#{new_object.article_id}")
   else
-    @errors = note.errors.messages
-    erb :"note_views/new"
+    erb "something went wrong"
   end
 end
 
@@ -35,9 +14,10 @@ post '/note/edit' do
   redirect to('/')
 end
 
-post '/note/delete' do
-  note = Note.find( )
+get '/note/delete/:note_id' do
+  note = Note.find(params[:note_id])
+  id = note.article_id
   note.destroy
-  redirect to('/')
+  redirect to("/article/show/#{id}")
 end
 
